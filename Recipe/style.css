@@ -69,9 +69,14 @@ a {
 img {
   border-radius: 10px;
 }
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+img:o
 .footer-content{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #f8f9fa;
     color: #343a40;
     position: absolute;
