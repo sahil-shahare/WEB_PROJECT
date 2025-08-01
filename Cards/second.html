@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #b48a8a;
+      }
+      .card {
+        background-color: aliceblue;
+        width: 350px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        gap: 5px;
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        padding-top: 0%;
+      }
+      .card p {
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .sub {
+        width: 90%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #b48a8a;
+        border-radius: 15px;
+      }
+      .sub img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .box1 {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #payment {
+        width: 75%;
+        height: 40px;
+        background-color: rgb(60, 38, 161);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+      #cancel {
+        width: 80%;
+        height: 30px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/icon.jpg" alt="icon" />
+        <br />
+        <h2>Order Summary</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+          ipsum. Veritatis corporis minima cumque deleniti a nemo, consectetur
+          facilis ea!
+        </p>
+        <div class="sub">
+          <div class="box1">
+            <img src="./images/music.png" alt="music" />
+            <p>An annual plan, just $59.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </div>
+        <br />
+        <button id="payment">Proced to Payment</button>
+        <br />
+        <a href="#" id="cancel">Cancel Order</a>
+      </div>
+    </div>
+  </body>
+</html>
